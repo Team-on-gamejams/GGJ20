@@ -39,11 +39,11 @@ namespace UnityToolbarExtender {
 		}
 
 		private static void LogPlayModeState(PlayModeStateChange state) {
-			if (state == PlayModeStateChange.EnteredEditMode && EditorPrefs.HasKey("LastActiveScene")) {
-				EditorSceneManager.OpenScene(
-					SceneUtility.GetScenePathByBuildIndex(EditorPrefs.GetInt("LastActiveScene")));
-				EditorPrefs.DeleteKey("LastActiveScene");
-			}
+			//if (state == PlayModeStateChange.EnteredEditMode && EditorPrefs.HasKey("LastActiveScene")) {
+			//	EditorSceneManager.OpenScene(
+			//		SceneUtility.GetScenePathByBuildIndex(EditorPrefs.GetInt("LastActiveScene")));
+			//	EditorPrefs.DeleteKey("LastActiveScene");
+			//}
 		}
 	}
 }

@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd23e9cd64b898244bf19162960f655a, type: 3}
-  m_Name: Patient1
+  m_Script: {fileID: 11500000, guid: 5c7f178676a75b34b81efe00f1630411, type: 3}
+  m_Name: PatientUI1
   m_EditorClassIdentifier: 
-  docie:
-    name: P1
-  organs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  rengenPrefab: {fileID: 5982496589706380576, guid: 81169c8fd7db5a941957d7e71ec4c84b,
+    type: 3}
+  sprite: {fileID: 21300000, guid: dc18c39a667a8fa488ac72716695dcc9, type: 3}

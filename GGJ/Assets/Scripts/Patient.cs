@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,4 +8,5 @@ public class Patient : ScriptableObject
 {
     public Docie docie;
     public Organ[] organs;
+    [NonSerialized] public PatientUI ui;
 }
