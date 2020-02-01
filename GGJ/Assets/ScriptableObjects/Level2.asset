@@ -10,12 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fe03e313092722498b9ec43a261353f, type: 3}
-  m_Name: Level1
+  m_Name: Level2
   m_EditorClassIdentifier: 
   patients:
   - {fileID: 11400000, guid: 6bf31746b6fb13648a60c73ebb4d80e8, type: 2}
-  - {fileID: 11400000, guid: 65d78ad9446b5694f80028e9b50ea556, type: 2}
-  - {fileID: 11400000, guid: 65d78ad9446b5694f80028e9b50ea556, type: 2}
-  - {fileID: 11400000, guid: 65d78ad9446b5694f80028e9b50ea556, type: 2}
+  - {fileID: 11400000, guid: 6bf31746b6fb13648a60c73ebb4d80e8, type: 2}
   - {fileID: 11400000, guid: 65d78ad9446b5694f80028e9b50ea556, type: 2}
   maxMistakes: 3
