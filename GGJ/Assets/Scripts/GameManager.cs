@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager Instance;
+
     public Tools selectedTool; //Set from right panel
 
     public Level[] levels;
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
     int currentLevel;
 
     private void Awake() {
+        Instance = this;
         currentLevel = 0;
     }
 
@@ -26,10 +29,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void InitLevel() {
-        Level currLevel = levels[currentLevel];
+        Level currLevel = Instantiate(levels[currentLevel]);
 
-        foreach (var patient in currLevel.patients) {
-            patient.ui = GetRandomPatientUI();
+        for (byte i = 0; i < currLevel.patients.Length; ++i) {
+            currLevel.patients[i] = Instantiate(currLevel.patients[i]);
+            currLevel.patients[i].ui = GetRandomPatientUI();
         }
 
         topui.InitRooms(currLevel.patients, roomui);

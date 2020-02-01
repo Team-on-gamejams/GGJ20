@@ -5,7 +5,7 @@ using UnityEngine;
 public class BaseWindow : MonoBehaviour
 {
     public bool isShowed = false;
-    Patient patient;
+    protected Patient patient;
 
     public void Show() {
         gameObject.SetActive(true);

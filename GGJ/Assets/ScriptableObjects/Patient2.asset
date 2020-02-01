@@ -15,6 +15,6 @@ MonoBehaviour:
   docie:
     name: Patien2
   organs:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6502768114193263652, guid: 6427879fb9363c149883f4d85b937fab, type: 3}
+  - {fileID: 6502768114193263652, guid: bba619df6f1f4654d9e8bfc88e2811b3, type: 3}
+  - {fileID: 6502768114193263652, guid: bba619df6f1f4654d9e8bfc88e2811b3, type: 3}

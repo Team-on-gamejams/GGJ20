@@ -2,10 +2,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Organ : MonoBehaviour {
+	public OrganTypes organTypes;
 	public Tools extrectTool;
 	public List<CraftData> avaliableCrafts;
+
+	[SerializeField] Image organImage;
+
+	public bool IsRightExtractTool(Tools tool) {
+		return tool == extrectTool;
+	}
+
+	public void SetRaycastTarget(bool isTarget) {
+		organImage.raycastTarget = isTarget;
+	}
 }
 
 [Serializable]
