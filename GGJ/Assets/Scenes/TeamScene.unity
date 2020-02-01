@@ -677,6 +677,21 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1100823725186915261, guid: ab5eb680cc4b46844a9e0226f18139e6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 946791851}
+    - target: {fileID: 1100823725186915261, guid: ab5eb680cc4b46844a9e0226f18139e6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSlotClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100823725186915261, guid: ab5eb680cc4b46844a9e0226f18139e6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5eb680cc4b46844a9e0226f18139e6, type: 3}
 --- !u!224 &257525058 stripped
@@ -914,6 +929,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100823725186915261, guid: ab5eb680cc4b46844a9e0226f18139e6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 946791851}
+    - target: {fileID: 1100823725186915261, guid: ab5eb680cc4b46844a9e0226f18139e6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnSlotClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 1100823725186915261, guid: ab5eb680cc4b46844a9e0226f18139e6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5eb680cc4b46844a9e0226f18139e6, type: 3}
@@ -5749,6 +5779,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1100823725186915261, guid: ab5eb680cc4b46844a9e0226f18139e6,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 946791851}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5eb680cc4b46844a9e0226f18139e6, type: 3}
 --- !u!224 &2965907390331023407 stripped
