@@ -15,7 +15,7 @@ public class OrganSlot : MonoBehaviour
     public void PlaceOrgan(Organ organ) {
         this.organ = organ;
         organ.transform.SetParent(transform);
-        organ.transform.position = transform.position;
+        LeanMover.Instance.Move(organ.gameObject, transform.position);
     }
 
     public void Select() {

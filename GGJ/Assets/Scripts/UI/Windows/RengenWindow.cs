@@ -70,7 +70,7 @@ public class RengenWindow : BaseWindow {
 		GameManager.Instance.organSlots.SelectedOrgan = null;
 
 		newOrgan.transform.SetParent(organPosHolder.organPos[id]);
-		newOrgan.transform.position = organPosHolder.organPos[id].position;
+		LeanMover.Instance.Move(newOrgan.gameObject, organPosHolder.organPos[id].position);
 		patient.organs[id] = GetOrganPrefab(newOrgan);
 		organs[id] = newOrgan;
 	}
