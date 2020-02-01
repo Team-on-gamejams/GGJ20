@@ -37,7 +37,6 @@ public class BookController : MonoBehaviour
     {
         Right = Right.GetComponent<Button>();
         Left = Left.GetComponent<Button>();
-        pages[0].SetActive(true);
     }
 
     public void Press(bool isRight)
@@ -49,7 +48,6 @@ public class BookController : MonoBehaviour
         if (!isRight)
             ButtonLeft();
         pages[page].SetActive(true);
-
     }
 
 }
