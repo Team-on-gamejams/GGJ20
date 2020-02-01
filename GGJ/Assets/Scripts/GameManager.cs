@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Dictionary<Tools, byte> tools;
 
     public PatientUI[] patientUIs;
+    public OrganSlotsHolder organSlots;
 
     [Header("Refs")]
     [SerializeField] TopUI topui;

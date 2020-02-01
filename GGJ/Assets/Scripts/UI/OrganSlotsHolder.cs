@@ -3,6 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OrganSlotsHolder : MonoBehaviour {
+	public Organ SelectedOrgan {
+		get => selecedSlot == -1 ? null : organSlots[selecedSlot].organ;
+		set {
+			if (selecedSlot != -1) {
+				organSlots[selecedSlot].Unselect();
+				organSlots[selecedSlot].organ = null;
+				selecedSlot = -1;
+			}
+		}
+	}
+
 	[SerializeField] OrganSlot[] organSlots;
 	int selecedSlot = -1;
 
@@ -27,6 +38,17 @@ public class OrganSlotsHolder : MonoBehaviour {
 			}
 		}
 	}
+
+	public void PlaceOrganAtPos(Organ organ, int pos) {
+		if(pos != -1) {
+			organSlots[pos].PlaceOrgan(organ);
+		}
+		else {
+			PlaceOrganFirstAvaliable(organ);
+		}
+	}
+
+	public int GetSelectedId() => selecedSlot;
 
 	public void OnSlotClick(int id) {
 		if (selecedSlot != id) {
