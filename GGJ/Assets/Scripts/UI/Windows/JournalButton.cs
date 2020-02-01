@@ -8,15 +8,13 @@ public class JournalButton : MonoBehaviour
     public Button Right;
     public Button Left;
     public AudioClip sound;
-    public Animator ani;
-
+    public GameObject[] gameObjects;
 
 
     void Start()
     {
         Right = Right.GetComponent<Button>();
         Left = Left.GetComponent<Button>();
-        ani.GetComponent<Animator>();
     }
 
 
@@ -25,16 +23,22 @@ public class JournalButton : MonoBehaviour
         //AudioSource.PlayClipAtPoint(sound, transform.position);
         if (isRight)
         {
-            Right.enabled = true;
-            if (ani.GetInteger("Page") < 2)
-                ani.SetInteger("Page", ani.GetInteger("Page") + 1);
+            
         }
         if (!isRight)
         {
-            Left.enabled = true;
-            if (ani.GetInteger("Page") > 0)
-                ani.SetInteger("Page", ani.GetInteger("Page") - 1);
+            
         }
         
+    }
+
+    public void PageRight()
+    {
+
+    }
+
+    public void PageLeft()
+    {
+
     }
 }
