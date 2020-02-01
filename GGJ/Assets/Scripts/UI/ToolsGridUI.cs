@@ -15,9 +15,18 @@ public class ToolsGridUI : MonoBehaviour
     }
 
     public void OnToolClick(int id) {
-        tools[selectedTool].Unselect();
-        selectedTool = id;
-        tools[selectedTool].Select();
-        gameManager.selectedTool = tools[selectedTool].toolType;
+        if(selectedTool == id) {
+            tools[selectedTool].Unselect();
+            selectedTool = -1;
+            gameManager.selectedTool = Tools.None;
+        }
+        else {
+            if(selectedTool != -1)
+                tools[selectedTool].Unselect();
+            selectedTool = id;
+            tools[selectedTool].Select();
+            gameManager.selectedTool = tools[selectedTool].toolType;
+        }
+        
     }
 }

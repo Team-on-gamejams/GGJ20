@@ -2,25 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ButcherPlate : MonoBehaviour
-{
-    [SerializeField] Transform organPos;
-    Organ organ;
+public class ButcherPlate : MonoBehaviour {
+	[SerializeField] Transform organPos;
+	Organ organ;
 
-    public void OnClick() {
-        Organ newOrgan = GameManager.Instance.organSlots.SelectedOrgan;
-        int selectedSlot = GameManager.Instance.organSlots.GetSelectedId();
-        GameManager.Instance.organSlots.SelectedOrgan = null;
+	public void OnClick() {
+		Organ newOrgan = GameManager.Instance.organSlots.SelectedOrgan;
+		int selectedSlot = GameManager.Instance.organSlots.GetSelectedId();
+		GameManager.Instance.organSlots.SelectedOrgan = null;
 
-        if(organ != null) {
-            GameManager.Instance.organSlots.PlaceOrganAtPos(organ, selectedSlot);
-            organ = null;
-        }
+		if (GameManager.Instance.selectedTool != Tools.None && organ != null) {
+			TryCraft();
+		}
+		else {
+			if (organ != null) {
+				GameManager.Instance.organSlots.PlaceOrganAtPos(organ, selectedSlot);
+				organ = null;
+			}
 
-        if(newOrgan != null) {
-            newOrgan.transform.SetParent(organPos);
-            newOrgan.transform.position = organPos.position;
-            organ = newOrgan;
-        }
-    }
+			if (newOrgan != null) {
+				newOrgan.transform.SetParent(organPos);
+				newOrgan.transform.position = organPos.position;
+				organ = newOrgan;
+			}
+		}
+	}
+
+	public void TryCraft() {
+		for(byte i = 0; i < organ.avaliableCrafts.Count; ++i) {
+			if(organ.avaliableCrafts[i].tool == GameManager.Instance.selectedTool) {
+				Organ newOrgan = Instantiate(organ.avaliableCrafts[i].result, organPos);
+				newOrgan.SetRaycastTarget(false);
+				Destroy(organ.gameObject);
+				organ = newOrgan;
+				return;
+			}
+		}
+	}
 }

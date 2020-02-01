@@ -38,7 +38,7 @@ public class RengenWindow : BaseWindow {
 					MoveOrganToSlot(id);
 				}
 				else {
-
+					Debug.Log("Lose hp");
 				}
 			}
 		}
