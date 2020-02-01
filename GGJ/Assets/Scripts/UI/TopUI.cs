@@ -12,6 +12,8 @@ public class TopUI : MonoBehaviour
 		for (byte i = 0; i < patients.Length; ++i) 
 			rooms[i].InitRoom(patients[i]);
 		OnRoomClick(0);
+		for (byte i = (byte)patients.Length; i < rooms.Length; ++i)
+			rooms[i].InitRoom(null);
 	}
 
 	public void OnRoomClick(int roomId) {
