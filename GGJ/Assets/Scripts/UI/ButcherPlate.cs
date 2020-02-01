@@ -32,6 +32,7 @@ public class ButcherPlate : MonoBehaviour {
 		for(byte i = 0; i < organ.avaliableCrafts.Count; ++i) {
 			if(organ.avaliableCrafts[i].tool == GameManager.Instance.selectedTool) {
 				Organ newOrgan = Instantiate(organ.avaliableCrafts[i].result, organPos);
+				newOrgan.name = organ.avaliableCrafts[i].result.name;
 				newOrgan.SetRaycastTarget(false);
 				Destroy(organ.gameObject);
 				organ = newOrgan;

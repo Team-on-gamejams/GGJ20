@@ -1,11 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class RengenWindow : BaseWindow {
+	public Action onOrganPlace;
+	public Action onWrongOrganPlace;
+
 	[SerializeField] GameObject rengenParent;
 	[SerializeField] OrganSlotsHolder organSlotsHolder;
+	[SerializeField] Organ[] organPrefabs;
 
 	OrganPosHolder organPosHolder;
 	Organ[] organs;
@@ -19,14 +24,19 @@ public class RengenWindow : BaseWindow {
 
 		organPosHolder = Instantiate(patient.ui.rengenPrefab, rengenParent.transform).GetComponent<OrganPosHolder>();
 
-		organs = new Organ[patient.organs.Length];
+		organs = new Organ[organPosHolder.organPos.Length];
 		for (byte i = 0; i < patient.organs.Length; ++i) {
 			if (patient.organs[i] != null) {
 				Organ organ = Instantiate(patient.organs[i], organPosHolder.organPos[i]);
+				organ.name = patient.organs[i].name;
 				organ.SetRaycastTarget(false);
 				organPosHolder.onClickAction[i] += ProcessClickOnRengen;
 
 				organs[i] = organ;
+			}
+			else {
+				organPosHolder.onClickAction[i] += ProcessClickOnRengen;
+				organs[i] = null;
 			}
 		}
 	}
@@ -38,13 +48,15 @@ public class RengenWindow : BaseWindow {
 					MoveOrganToSlot(id);
 				}
 				else {
-					Debug.Log("Lose hp");
+					onWrongOrganPlace?.Invoke();
 				}
 			}
 		}
 		else {
-			if (GameManager.Instance.organSlots.SelectedOrgan != null)
+			if (GameManager.Instance.organSlots.SelectedOrgan != null) {
 				MoveOrganFromHolder(id);
+				onOrganPlace?.Invoke();
+			}
 		}
 	}
 
@@ -59,6 +71,15 @@ public class RengenWindow : BaseWindow {
 
 		newOrgan.transform.SetParent(organPosHolder.organPos[id]);
 		newOrgan.transform.position = organPosHolder.organPos[id].position;
-		patient.organs[id] = organs[id] = newOrgan;
+		patient.organs[id] = GetOrganPrefab(newOrgan);
+		organs[id] = newOrgan;
+	}
+
+	Organ GetOrganPrefab(Organ orig) {
+		foreach (var org in organPrefabs) {
+			if (org.name == orig.name)
+				return org;
+		}
+		return null;
 	}
 }

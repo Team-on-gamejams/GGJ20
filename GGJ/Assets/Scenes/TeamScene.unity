@@ -2241,6 +2241,7 @@ MonoBehaviour:
   organSlots: {fileID: 946791851}
   topui: {fileID: 919977556}
   roomui: {fileID: 343237758}
+  rengenWindow: {fileID: 1127400720}
 --- !u!1001 &864061478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3845,6 +3846,9 @@ MonoBehaviour:
   isShowed: 0
   rengenParent: {fileID: 803498991}
   organSlotsHolder: {fileID: 946791851}
+  organPrefabs:
+  - {fileID: 6502768114193263652, guid: 6427879fb9363c149883f4d85b937fab, type: 3}
+  - {fileID: 6502768114193263652, guid: bba619df6f1f4654d9e8bfc88e2811b3, type: 3}
 --- !u!1 &1170589603
 GameObject:
   m_ObjectHideFlags: 0

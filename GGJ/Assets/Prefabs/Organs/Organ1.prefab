@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d00d47c1b547a47bf3faac6722c120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  organTypes: 1
+  organType: 1
   extrectTool: 1
   avaliableCrafts:
   - tool: 3

@@ -15,7 +15,8 @@ public class TopRoom : MonoBehaviour
     public void InitRoom(Patient patient) {
         this.patient = patient;
 
-        text.text = patient.docie.name;
+        text.text = patient.docie.name + "\n";
+        text.text += patient.docie.neededOrgs + "\n";
         patientSprite.sprite = patient.ui.sprite;
     }
 }

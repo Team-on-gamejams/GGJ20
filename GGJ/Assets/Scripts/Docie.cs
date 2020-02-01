@@ -7,4 +7,5 @@ using UnityEngine;
 public class Docie
 {
     public string name;
+    public string neededOrgs;
 }

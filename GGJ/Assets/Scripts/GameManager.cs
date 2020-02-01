@@ -2,45 +2,75 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
-{
-    public static GameManager Instance;
+public class GameManager : MonoBehaviour {
+	public static GameManager Instance;
 
-    public Tools selectedTool; //Set from right panel
+	public Tools selectedTool; //Set from right panel
 
-    public Level[] levels;
-    public Dictionary<Tools, byte> tools;
+	public Level[] levels;
+	public Dictionary<Tools, byte> tools;
 
-    public PatientUI[] patientUIs;
-    public OrganSlotsHolder organSlots;
+	public PatientUI[] patientUIs;
+	public OrganSlotsHolder organSlots;
 
-    [Header("Refs")]
-    [SerializeField] TopUI topui;
-    [SerializeField] RoomUI roomui;
+	[Header("Refs")]
+	[SerializeField] TopUI topui;
+	[SerializeField] RoomUI roomui;
+	[SerializeField] RengenWindow rengenWindow;
 
-    int currentLevel;
+	int currentLevel;
 
-    private void Awake() {
-        Instance = this;
-        currentLevel = 0;
-    }
+	private void Awake() {
+		Instance = this;
+		currentLevel = 0;
+	}
 
-    private void Start() {
-        InitLevel();
-    }
+	private void Start() {
+		InitLevel();
 
-    public void InitLevel() {
-        Level currLevel = Instantiate(levels[currentLevel]);
+		rengenWindow.onOrganPlace += OnOrganPlace;
+		rengenWindow.onWrongOrganPlace += OnWrongOrganPlace;
+	}
 
-        for (byte i = 0; i < currLevel.patients.Length; ++i) {
-            currLevel.patients[i] = Instantiate(currLevel.patients[i]);
-            currLevel.patients[i].ui = GetRandomPatientUI();
-        }
+	public void InitLevel() {
+		Level currLevel = Instantiate(levels[currentLevel]);
+		levels[currentLevel] = currLevel;
 
-        topui.InitRooms(currLevel.patients, roomui);
-    }
+		for (byte i = 0; i < currLevel.patients.Length; ++i) {
+			currLevel.patients[i] = Instantiate(currLevel.patients[i]);
+			currLevel.patients[i].ui = GetRandomPatientUI();
+		}
 
-    public PatientUI GetRandomPatientUI() {
-        return patientUIs[Random.Range(0, patientUIs.Length)];
-    }
+		topui.InitRooms(currLevel.patients, roomui);
+	}
+
+	public PatientUI GetRandomPatientUI() {
+		return patientUIs[Random.Range(0, patientUIs.Length)];
+	}
+
+	public void OnOrganPlace() {
+		if (levels[currentLevel].CheckWin()) { 
+			if(currentLevel == levels.Length - 1) {
+				Debug.Log("Win game");
+			}
+			else {
+				++currentLevel;
+				InitLevel();
+			}
+		}
+	}
+
+	public void OnWrongOrganPlace() {
+		if (levels[currentLevel].RemoveHp()) {
+			Debug.Log("Lose game");
+		}
+	}
+
+	public void LevelWin() {
+
+	}
+
+	public void LevelLose() {
+
+	}
 }

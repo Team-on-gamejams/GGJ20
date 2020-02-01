@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Organ : MonoBehaviour {
-	public OrganTypes organTypes;
+	public OrganTypes organType;
 	public Tools extrectTool;
 	public List<CraftData> avaliableCrafts;
 

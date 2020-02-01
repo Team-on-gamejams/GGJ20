@@ -15,8 +15,4 @@ MonoBehaviour:
   patients:
   - {fileID: 11400000, guid: 6bf31746b6fb13648a60c73ebb4d80e8, type: 2}
   - {fileID: 11400000, guid: 65d78ad9446b5694f80028e9b50ea556, type: 2}
-  - {fileID: 11400000, guid: c297a8fb21b5fa542a076903b7d35f4d, type: 2}
-  - {fileID: 11400000, guid: 6e4327c8281a67346b1a7c97e0e46a10, type: 2}
-  - {fileID: 11400000, guid: 7779a14dbfe795c4caa19f1b9bac232a, type: 2}
-  - {fileID: 11400000, guid: 1901583e97908e847a21c0845afd1e16, type: 2}
   maxMistakes: 3

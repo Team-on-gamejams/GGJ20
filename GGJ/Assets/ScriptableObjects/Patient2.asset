@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   docie:
     name: Patien2
+    neededOrgs: org 2 1 2
   organs:
   - {fileID: 6502768114193263652, guid: 6427879fb9363c149883f4d85b937fab, type: 3}
   - {fileID: 6502768114193263652, guid: bba619df6f1f4654d9e8bfc88e2811b3, type: 3}
   - {fileID: 6502768114193263652, guid: bba619df6f1f4654d9e8bfc88e2811b3, type: 3}
+  neededOrgans: 020001000200
