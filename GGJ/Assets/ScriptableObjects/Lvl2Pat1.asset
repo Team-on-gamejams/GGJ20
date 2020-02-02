@@ -13,8 +13,37 @@ MonoBehaviour:
   m_Name: Lvl2Pat1
   m_EditorClassIdentifier: 
   docie:
-    name: P1
-    neededOrgs: org 1 1 1
+    name:
+    - Crektuns Khit'ux
+    - Phuf'eall Umphis
+    - Zuukvoks Qhilak
+    - Vramiusan Rakel
+    - Stinko Vrimmuls
+    neededOrgs: 
+    galaxy:
+    - 'GALAXY: Maelstrom Nebula '
+    - 'GALAXY: Spearpoint Nebula'
+    planet:
+    - 'PLANET: Llippe 5R5'
+    - 'PLANET: Vade S8L7'
+    adress:
+    - 'ADRESS: EP0058844A2'
+    - 'ADRESS: EP0058844A2'
+    phone:
+    - 'PHONE: 626-555-0134'
+    - 'PHONE: 207-555-0171'
+    birth:
+    - 'BIRTHDATE: 01-04-2156'
+    - 'BIRTHDATE: 21-04-2020'
+    race:
+    - 'RACE: Saphai'
+    - 'RACE: Ildraeth'
+    gander:
+    - 'GENDER: THEY'
+    - 'GENDER: FEMALE'
+    sympthoms:
+    - 'SYMPTOMS: nausea, vomiting, pain'
+    - 'SYMPTOMS: nausea, vomiting, fever'
   organs:
   - {fileID: 6502768114193263652, guid: 36d3e74c1166d764f90647a4a907e152, type: 3}
   - {fileID: 6502768114193263652, guid: 32478905f223aba4ab6d4b739a6dd65f, type: 3}

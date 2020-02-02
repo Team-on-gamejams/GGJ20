@@ -9,7 +9,6 @@ public class TopRoom : MonoBehaviour
     public Patient patient;
 
     [Header("Refs")]
-    [SerializeField] TextMeshProUGUI text;
     [SerializeField] Image patientSprite;
     [SerializeField] GameObject closedObj;
 
@@ -21,8 +20,6 @@ public class TopRoom : MonoBehaviour
         else {
             this.patient = patient;
 
-            text.text = patient.docie.name + "\n";
-            text.text += patient.docie.neededOrgs + "\n";
             patientSprite.color = Color.white;
             patientSprite.sprite = patient.ui.sprite;
 
