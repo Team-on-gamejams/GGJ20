@@ -208,7 +208,7 @@ PrefabInstance:
     - target: {fileID: 6418586769677434967, guid: 9900a04322ba2c04bb4a3e252d6faffb,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6418586769677434966, guid: 9900a04322ba2c04bb4a3e252d6faffb,
         type: 3}
@@ -493,7 +493,7 @@ PrefabInstance:
     - target: {fileID: 6418586768183464487, guid: 9900a04322ba2c04bb4a3e252d6faffb,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6418586768213953734, guid: 9900a04322ba2c04bb4a3e252d6faffb,
         type: 3}
@@ -618,7 +618,7 @@ PrefabInstance:
     - target: {fileID: 7555063523795371040, guid: 9900a04322ba2c04bb4a3e252d6faffb,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5326909362653854104, guid: 9900a04322ba2c04bb4a3e252d6faffb,
         type: 3}
@@ -720,6 +720,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_BestFit
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1443136526505869567, guid: 9900a04322ba2c04bb4a3e252d6faffb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9900a04322ba2c04bb4a3e252d6faffb, type: 3}
@@ -5788,6 +5793,11 @@ PrefabInstance:
       propertyPath: toolType
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 110509424, guid: 5a0998f6f629ef94cad470da47be1476, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 42143ef47dcaeff4a9cc7b3916efec03,
+        type: 3}
     - target: {fileID: 670363969, guid: 5a0998f6f629ef94cad470da47be1476, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -0
@@ -5809,11 +5819,6 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 110509424, guid: 5a0998f6f629ef94cad470da47be1476, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 42143ef47dcaeff4a9cc7b3916efec03,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a0998f6f629ef94cad470da47be1476, type: 3}
 --- !u!224 &1850369818 stripped
@@ -6026,14 +6031,14 @@ RectTransform:
   m_GameObject: {fileID: 2025862538}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.97346467, y: 0.58112484, z: 1}
   m_Children: []
   m_Father: {fileID: 343237755}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -289, y: -70.6}
+  m_AnchoredPosition: {x: -139, y: 80}
   m_SizeDelta: {x: 117.93, y: 141.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2025862540
@@ -6108,7 +6113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2588965437645987274, guid: 40e582e5766a9ff42bdf1dc7b252fc7e,
+  m_Sprite: {fileID: 2353571312451627304, guid: 2673d7c4c8835564184c82be42abf01a,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
