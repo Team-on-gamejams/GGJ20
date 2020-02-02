@@ -8,20 +8,32 @@ public class VideoControll : MonoBehaviour
     // Start is called before the first frame update
 
     public VideoPlayer video;
+    public VideoPlayer film;
+
+
+
+    public void startFilm(){
+        film.gameObject.SetActive(true);
+        film.Play();
+    }
     void Start()
     {
- 
-        // Debug.Log(video.frameCount);
+
     }
 
     // Update is called once per frame
     void Update()
     {
 
-    // Debug.Log( video.frame);
-
         if(video.frame + 1 == (int)video.frameCount ){
              video.gameObject.SetActive(false);
+        }
+
+        Debug.Log(film.frame);
+        Debug.Log(film.frameCount);
+
+        if(film.frame + 1 == (int)film.frameCount){
+             film.gameObject.SetActive(false);
         }
     }
 }
