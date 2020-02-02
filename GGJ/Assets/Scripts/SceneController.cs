@@ -23,6 +23,12 @@ public class SceneController : MonoBehaviour
 		StartCoroutine(AsyncLoad());
 	}
 
+	public void StartLoad(int sceneID) {
+		this.sceneID = sceneID;
+		loadingScreen.SetActive(true);
+		StartCoroutine(AsyncLoad());
+	}
+
 	IEnumerator AsyncLoad()
 	{
 		AsyncOperation operation = SceneManager.LoadSceneAsync(sceneID);

@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour {
 	[SerializeField] TopUI topui;
 	[SerializeField] RoomUI roomui;
 	[SerializeField] RengenWindow rengenWindow;
+	[SerializeField] LoseWindow loseWindow;
+	[SerializeField] NextLevelWindow nextLevelWindow;
+	[SerializeField] WinWindow winWindow;
 
 	int currentLevel;
 
@@ -51,9 +54,10 @@ public class GameManager : MonoBehaviour {
 	public void OnOrganPlace() {
 		if (levels[currentLevel].CheckWin()) { 
 			if(currentLevel == levels.Length - 1) {
-				Debug.Log("Win game");
+				winWindow.Show();
 			}
 			else {
+				nextLevelWindow.Show();
 				++currentLevel;
 				InitLevel();
 			}
@@ -62,15 +66,7 @@ public class GameManager : MonoBehaviour {
 
 	public void OnWrongOrganPlace() {
 		if (levels[currentLevel].RemoveHp()) {
-			Debug.Log("Lose game");
+			loseWindow.Show();
 		}
-	}
-
-	public void LevelWin() {
-
-	}
-
-	public void LevelLose() {
-
 	}
 }
