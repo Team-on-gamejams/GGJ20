@@ -35,9 +35,14 @@ public class GameManager : MonoBehaviour {
 		rengenWindow.onWrongOrganPlace += OnWrongOrganPlace;
 	}
 
+	List<int> possiblePatients;
 	public void InitLevel() {
 		Level currLevel = Instantiate(levels[currentLevel]);
 		levels[currentLevel] = currLevel;
+
+		possiblePatients = new List<int>(patientUIs.Length);
+		for (int i = 0; i < patientUIs.Length; ++i)
+			possiblePatients.Add(i);
 
 		for (byte i = 0; i < currLevel.patients.Length; ++i) {
 			currLevel.patients[i] = Instantiate(currLevel.patients[i]);
@@ -48,7 +53,10 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public PatientUI GetRandomPatientUI() {
-		return patientUIs[Random.Range(0, patientUIs.Length)];
+		int pos = Random.Range(0, possiblePatients.Count);
+		int id = possiblePatients[pos];
+		possiblePatients.RemoveAt(pos);
+		return patientUIs[id];
 	}
 
 	public void OnOrganPlace() {
@@ -57,9 +65,14 @@ public class GameManager : MonoBehaviour {
 				winWindow.Show();
 			}
 			else {
-				nextLevelWindow.Show();
-				++currentLevel;
-				InitLevel();
+				LeanTween.delayedCall(1.5f, ()=> {
+					nextLevelWindow.Show();
+				});
+				nextLevelWindow.onNextClick = null;
+				nextLevelWindow.onNextClick += () => {
+					++currentLevel;
+					InitLevel();
+				};
 			}
 		}
 	}
