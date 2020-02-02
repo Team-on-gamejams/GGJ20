@@ -32,10 +32,10 @@ RectTransform:
   m_Father: {fileID: 717723105256011779}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19, y: 0}
-  m_SizeDelta: {x: 1241.8, y: 742.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 7.420044, y: 4.529999}
+  m_SizeDelta: {x: -14.849976, y: -9.049988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &717723105204676974
 CanvasRenderer:
@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - component: {fileID: 717723105256011779}
   m_Layer: 5
-  m_Name: page0 1
+  m_Name: Page0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
