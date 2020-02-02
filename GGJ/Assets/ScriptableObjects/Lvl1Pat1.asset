@@ -19,13 +19,31 @@ MonoBehaviour:
     - Zuukvoks Qhilak
     - Vramiusan Rakel
     - Stinko Vrimmuls
-    neededOrgs:
-    - 'GALAXY: Spearpoint Nebula PLANET: Llippe 5R5 ADRESS: EP0058844A2 PHONE: 626-555-0134
-      BIRTHDATE: 01-04-2156 RACE: Saphai GENDER: THEY SYMPTOMS: nausea, vomiting,
-      pain'
-    - 'GALAXY: Maelstrom Nebula PLANET: Vade S8L7 ADRESS: EP0058844A2 PHONE: 8-800-255-65
-      BIRTHDATE: 01-04-1941 RACE: Ildraeth GENDER: Female SYMPTOMS: nausea, vomiting,
-      fever'
+    neededOrgs: 
+    galaxy:
+    - 'GALAXY: Maelstrom Nebula '
+    - 'GALAXY: Spearpoint Nebula'
+    planet:
+    - 'PLANET: Llippe 5R5'
+    - 'PLANET: Vade S8L7'
+    adress:
+    - 'ADRESS: EP0058844A2'
+    - 'ADRESS: EP0058844A2'
+    phone:
+    - 'PHONE: 626-555-0134'
+    - 'PHONE: 207-555-0171'
+    birth:
+    - 'BIRTHDATE: 01-04-2156'
+    - 'BIRTHDATE: 21-04-2020'
+    race:
+    - 'RACE: Saphai'
+    - 'RACE: Ildraeth'
+    gander:
+    - 'GENDER: THEY'
+    - 'GENDER: FEMALE'
+    sympthoms:
+    - 'SYMPTOMS: nausea, vomiting, pain'
+    - 'SYMPTOMS: nausea, vomiting, fever'
   organs:
   - {fileID: 6502768114193263652, guid: 6d225b686e374c141af930e0d4493759, type: 3}
   - {fileID: 6502768114193263652, guid: 8a0f0d86c8ff078489c7412a74ebba4c, type: 3}
