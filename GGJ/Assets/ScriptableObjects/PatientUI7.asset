@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c7f178676a75b34b81efe00f1630411, type: 3}
   m_Name: PatientUI7
   m_EditorClassIdentifier: 
-  rengenPrefab: {fileID: 5982496589706380576, guid: 0368bfd4018110141946a661791d05bb,
+  rengenPrefab: {fileID: 5982496589706380576, guid: a3ee906ae18d27f489d2ad70fc1531de,
     type: 3}
   sprite: {fileID: 21300000, guid: 0b95bbe1406893f418640bb1244c9adc, type: 3}

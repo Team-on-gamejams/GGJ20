@@ -16,7 +16,7 @@ MonoBehaviour:
     name: P1
     neededOrgs: org 1 1 1
   organs:
-  - {fileID: 6502768114193263652, guid: 6427879fb9363c149883f4d85b937fab, type: 3}
-  - {fileID: 6502768114193263652, guid: c712aa24550a0e540b2328891b6cace7, type: 3}
-  - {fileID: 6502768114193263652, guid: 874a5ec5577dc874494c44288fb8309e, type: 3}
+  - {fileID: 6502768114193263652, guid: 1e716e2ccda512844a166a7cf29d7d07, type: 3}
+  - {fileID: 6502768114193263652, guid: 73e6d8e9e681af14ca56b1a87df8b4c3, type: 3}
+  - {fileID: 6502768114193263652, guid: c597c60aacc92d544ad2b037f21c155d, type: 3}
   neededOrgans: 050006000700

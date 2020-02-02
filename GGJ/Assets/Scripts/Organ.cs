@@ -17,6 +17,10 @@ public class Organ : MonoBehaviour {
 
 	public void SetRaycastTarget(bool isTarget) {
 		organImage.raycastTarget = isTarget;
+		Image[] transforms = GetComponentsInChildren<Image>();
+		foreach (var t in transforms) {
+			t.raycastTarget = isTarget;
+		}
 	}
 }
 
