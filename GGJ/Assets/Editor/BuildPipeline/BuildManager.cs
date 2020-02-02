@@ -23,8 +23,8 @@ public static class BuildManager {
 		"osx-universal",
 		"webgl",
 		"android",
-		"ios",
-		"uwp",
+		//"ios",
+		//"uwp",
 	};
 
 
@@ -189,6 +189,8 @@ public static class BuildManager {
 	}
 
 	static string BaseBuild(BuildTargetGroup buildTargetGroup, BuildTarget buildTarget, BuildOptions buildOptions, bool needReturnBuildTarget, bool incrementPatch, string folderPath, string buildPath) {
+		folderPath = folderPath.Replace(' ', '-');
+		buildPath = buildPath.Replace(' ', '-');
 		string basePath = $"Builds/{PlayerSettings.productName}_{PlayerSettings.bundleVersion}.{LastBuildPatch}";
 		BuildTarget targetBeforeStart = EditorUserBuildSettings.activeBuildTarget;
 		BuildTargetGroup targetGroupBeforeStart = BuildPipeline.GetBuildTargetGroup(targetBeforeStart);
