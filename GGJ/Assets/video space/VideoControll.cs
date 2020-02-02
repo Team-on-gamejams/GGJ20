@@ -16,6 +16,11 @@ public class VideoControll : MonoBehaviour
         film.gameObject.SetActive(true);
         film.Play();
     }
+
+
+    public void stopFilm(){
+        film.gameObject.SetActive(false);
+    }
     void Start()
     {
 
@@ -29,11 +34,8 @@ public class VideoControll : MonoBehaviour
              video.gameObject.SetActive(false);
         }
 
-        Debug.Log(film.frame);
-        Debug.Log(film.frameCount);
-
         if(film.frame + 1 == (int)film.frameCount){
-             film.gameObject.SetActive(false);
+             stopFilm();
         }
     }
 }
