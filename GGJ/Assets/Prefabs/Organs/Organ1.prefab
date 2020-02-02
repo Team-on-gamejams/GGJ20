@@ -64,7 +64,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 53c0f916b3dfbef4696173865416a9ae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2fa48093edd4d914b89a42b7eae3d1e7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -179,8 +179,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organType: 1
   extrectTool: 1
-  avaliableCrafts:
-  - tool: 3
-    result: {fileID: 6502768114193263652, guid: bba619df6f1f4654d9e8bfc88e2811b3,
-      type: 3}
+  avaliableCrafts: []
   organImage: {fileID: 6502768114029419821}

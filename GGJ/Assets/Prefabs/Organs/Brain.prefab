@@ -64,7 +64,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f90297e60c7d2b84aae1a73abd4f118a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b82f84dad1dbb804690a233146762d95, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 6502768114193263653}
   - component: {fileID: 6502768114193263652}
   m_Layer: 5
-  m_Name: Organ2
+  m_Name: Organ10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4d00d47c1b547a47bf3faac6722c120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  organType: 2
+  organType: 10
   extrectTool: 1
   avaliableCrafts: []
   organImage: {fileID: 6502768114029419821}

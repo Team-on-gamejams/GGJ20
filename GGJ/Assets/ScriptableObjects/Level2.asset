@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Level2
   m_EditorClassIdentifier: 
   patients:
-  - {fileID: 11400000, guid: 6bf31746b6fb13648a60c73ebb4d80e8, type: 2}
-  - {fileID: 11400000, guid: 6bf31746b6fb13648a60c73ebb4d80e8, type: 2}
-  - {fileID: 11400000, guid: 65d78ad9446b5694f80028e9b50ea556, type: 2}
+  - {fileID: 11400000, guid: e3db90c39c7b7ad47953e69906099552, type: 2}
+  - {fileID: 11400000, guid: 680217c501070fd4bb626351c9261dd6, type: 2}
+  - {fileID: 11400000, guid: e093dd87f2bd9a64da9d284ff8a00122, type: 2}
+  - {fileID: 11400000, guid: b20dbcd365e725b4ebe0e3e4ba12c8fb, type: 2}
   maxMistakes: 3

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd23e9cd64b898244bf19162960f655a, type: 3}
-  m_Name: Patient2
+  m_Name: Lvl2Pat1
   m_EditorClassIdentifier: 
   docie:
-    name: Patien2
-    neededOrgs: org 2 1 2
+    name: P1
+    neededOrgs: org 1 1 1
   organs:
-  - {fileID: 6502768114193263652, guid: 6427879fb9363c149883f4d85b937fab, type: 3}
-  - {fileID: 6502768114193263652, guid: bba619df6f1f4654d9e8bfc88e2811b3, type: 3}
-  - {fileID: 6502768114193263652, guid: bba619df6f1f4654d9e8bfc88e2811b3, type: 3}
-  neededOrgans: 020001000200
+  - {fileID: 6502768114193263652, guid: 211598d63a27b084b80f55dec4afd49e, type: 3}
+  - {fileID: 6502768114193263652, guid: 211598d63a27b084b80f55dec4afd49e, type: 3}
+  - {fileID: 6502768114193263652, guid: c712aa24550a0e540b2328891b6cace7, type: 3}
+  neededOrgans: 040001000200

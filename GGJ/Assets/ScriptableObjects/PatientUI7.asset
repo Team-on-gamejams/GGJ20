@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe03e313092722498b9ec43a261353f, type: 3}
-  m_Name: Level1
+  m_Script: {fileID: 11500000, guid: 5c7f178676a75b34b81efe00f1630411, type: 3}
+  m_Name: PatientUI7
   m_EditorClassIdentifier: 
-  patients:
-  - {fileID: 11400000, guid: 6bf31746b6fb13648a60c73ebb4d80e8, type: 2}
-  - {fileID: 11400000, guid: ea58417f779b2e048a64d70821a50480, type: 2}
-  maxMistakes: 3
+  rengenPrefab: {fileID: 5982496589706380576, guid: 0368bfd4018110141946a661791d05bb,
+    type: 3}
+  sprite: {fileID: 21300000, guid: 0b95bbe1406893f418640bb1244c9adc, type: 3}

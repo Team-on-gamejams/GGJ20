@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd23e9cd64b898244bf19162960f655a, type: 3}
+  m_Name: Lvl1Pat1
+  m_EditorClassIdentifier: 
+  docie:
+    name: P1
+    neededOrgs: org 1 1 1
+  organs:
+  - {fileID: 6502768114193263652, guid: bc915b6eb2edaf1438db26260a03e510, type: 3}
+  - {fileID: 6502768114193263652, guid: 6013dcfc3999a344dae4febefd100ff1, type: 3}
+  - {fileID: 6502768114193263652, guid: 3576b1f011ac8334f8367b5429715274, type: 3}
+  neededOrgans: 040001000200
