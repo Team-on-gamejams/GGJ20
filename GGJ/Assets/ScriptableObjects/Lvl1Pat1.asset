@@ -13,8 +13,19 @@ MonoBehaviour:
   m_Name: Lvl1Pat1
   m_EditorClassIdentifier: 
   docie:
-    name: P1
-    neededOrgs: org 1 1 1
+    name:
+    - Crektuns Khit'ux
+    - Phuf'eall Umphis
+    - Zuukvoks Qhilak
+    - Vramiusan Rakel
+    - Stinko Vrimmuls
+    neededOrgs:
+    - 'GALAXY: Spearpoint Nebula PLANET: Llippe 5R5 ADRESS: EP0058844A2 PHONE: 626-555-0134
+      BIRTHDATE: 01-04-2156 RACE: Saphai GENDER: THEY SYMPTOMS: nausea, vomiting,
+      pain'
+    - 'GALAXY: Maelstrom Nebula PLANET: Vade S8L7 ADRESS: EP0058844A2 PHONE: 8-800-255-65
+      BIRTHDATE: 01-04-1941 RACE: Ildraeth GENDER: Female SYMPTOMS: nausea, vomiting,
+      fever'
   organs:
   - {fileID: 6502768114193263652, guid: 6d225b686e374c141af930e0d4493759, type: 3}
   - {fileID: 6502768114193263652, guid: 8a0f0d86c8ff078489c7412a74ebba4c, type: 3}
