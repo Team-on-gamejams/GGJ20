@@ -3,7 +3,7 @@ Theme: THEME
 GAME_NAME  
 GAME_DESR  
 
-![Cover](Screenshots/Cover.jpg)
+![Cover](Screenshots/Cover1.jpg)
 
 # Downloads and Links
 Available in [Platform](LINK). If you encounter any problem, please leave a issue! 
@@ -26,7 +26,8 @@ The Global Game Jam is the world's largest game jam event taking place around th
  * [mary.ggrusha](https://www.instagram.com/ggrusha_art/) - artist
 
 # Screenshots
-![Screenshot1](Screenshots/1.jpg)  
-![Screenshot2](Screenshots/2.jpg)  
-![Screenshot3](Screenshots/3.jpg)  
-![Screenshot4](Screenshots/5.jpg)
+![Screenshot1](Screenshots/1.png)  
+![Screenshot2](Screenshots/2.png)  
+![Screenshot3](Screenshots/3.png)  
+![Screenshot4](Screenshots/4.png) 
+![Screenshot5](Screenshots/5.png)
