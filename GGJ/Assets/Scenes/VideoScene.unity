@@ -237,15 +237,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingScrean
       objectReference: {fileID: 0}
+    - target: {fileID: 8139897984767035015, guid: ea78778591b828d4094a0e945ba70b5f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8139897984767035013, guid: ea78778591b828d4094a0e945ba70b5f,
+        type: 3}
+      propertyPath: sceneID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8139897985286404839, guid: ea78778591b828d4094a0e945ba70b5f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8139897985980799101, guid: ea78778591b828d4094a0e945ba70b5f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1407737734334903156, guid: ea78778591b828d4094a0e945ba70b5f,
         type: 3}
